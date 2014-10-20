@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>What to eat api app</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700|Playball|Sansita+One' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header>
+		<div class="container clearfix">
+			<h1>Hmmm.... <br> What Should I <br>Eat???</h1>
+			<p>Are you stuck with what to make? Scroll down for more options</p>
+		</div><!-- /.container -->
+	</header>
+	<main >
+		<div class="container clearfix" id="recipes">
+			<div class="courses clearfix">
+				<h3>Step 1</h3>
+				<h4>Pick your meal time</h4>
+				<h4>Breakfast, Lunch or Dinner</h4>
+				<form action="" id="myform">
+					<label for="breakfast"> <input id="breakfast" type="radio" name="course" value="course^course-Breakfast and Brunch"><img src="images/breakfast.png" alt=""></label>
+					<label for="lunch"> <input id="lunch" type="radio" name="course" value="course^course-Lunch and Snacks"><img src="images/lunch.png" alt=""></label>
+					<label for="dinner"><input id="dinner" type="radio" name="course" value="course^course-Main Dishes"><img src="images/dinner.png" alt=""></label>
+					</div><!-- /.course -->
+					<div class="ingredients">
+						<h3>Step 2</h3>
+						<h4>Type a certain ingredient you want to cook with</h4>
+						<input type="text" placeholder="lowercase letters only!" class="list">
+					</div><!--  /.ingred -->
+					<div class="search clearfix">
+					<h3>Step 3</h3>
+					<h4>Click submit and recipes according to your search will appear</h4>
+						<input type="submit">
+					</div><!-- /.search -->
+				</form>
+			<!-- hide -->
+			<div class="recipe clearfix">
+			<div class="recipeImage clearfix"></div>
+			</div><!-- /.recipe --> 
+			
+		</div><!-- /.container -->
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <script type="text/javascript" src="typeahead.js/typeahead.jquery.js"></script>
+</body>
+</html>
